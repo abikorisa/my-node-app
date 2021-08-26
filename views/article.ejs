@@ -7,8 +7,8 @@
     <script src="/send_url.js"></script>
   </head>
   <body>
+    <%- include('header'); %>
     <main>
-      <%- include('header'); %>
       <div class="article">
         <% if (article.category === 'all') { %>
         <h1><%= article.title %></h1>

@@ -14,7 +14,7 @@ html {
 body {
   margin: 0;
   background-color: rgba(255, 221, 220, 0.25);
-  color: #6c7686;
+  color: #24285b;
 }
 
 ul,
@@ -114,9 +114,9 @@ header {
 .header-nav {
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  min-width: 700px;
+  /* min-width: 700px;*/
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
@@ -128,17 +128,7 @@ header {
   font-weight: bold;
 }
 
-.header-nav p {
-  padding-left: 30px;
-  font-size: 15px;
-  color: #24285b;
-  font-weight: bold;
-  word-wrap: break-word;
-  flex: 1;
-}
-
 .header-nav ul {
-  text-align: right;
   display: flex;
 }
 
@@ -149,10 +139,6 @@ header {
   color: #ffffff;
   font-weight: bold;
   padding-left: 30px;
-}
-
-.heading {
-  font-size: 30px;
 }
 
 .header-item {
@@ -179,6 +165,71 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url(/image/radio2.png);
+}
+
+main {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 100px;
+}
+
+.list li,
+.list-admin li {
+  position: relative;
+  padding: 28px 40px 54px;
+  border: 1px solid #d5dee8;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+.list li:not(:first-child),
+.list-admin li:not(:first-child) {
+  margin-top: 20px;
+}
+
+.list h2,
+.list-admin h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.list p,
+.list-admin p {
+  font-size: 16px;
+  color: #8491a5;
+}
+
+.list i,
+.list-admin i {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff708f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 16px;
+  font-style: normal;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  letter-spacing: 0.05em;
+}
+
+.list a {
+  position: absolute;
+  bottom: 18px;
+  right: 30px;
+  display: inline-block;
+  color: #30c8d6;
+}
+.list a:hover {
+  color: #21bbc9;
+}
+
+.articles {
+  border: 1px solid #d5dee8;
+  border-radius: 6px;
+  background-color: #ffffff;
 }
 
 .article > h1 {

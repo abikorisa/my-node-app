@@ -1,0 +1,62 @@
+//mainタグの幅
+main {
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 80px 0 100px;
+}
+
+.list li,
+.list-admin li {
+  //position: relative;は「続きを読む」ボタンのためにある
+  position: relative;
+  padding: 28px 40px 54px;
+  border: 1px solid #d5dee8;
+  border-radius: 6px;
+  background-color: #ffffff;
+}
+
+//一番先頭にmargin:20pxを確保させない
+.list li:not(:first-child),
+.list-admin li:not(:first-child) {
+  margin-top: 20px;
+}
+
+.list h2,
+.list-admin h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.list p,
+.list-admin p {
+  font-size: 16px;
+  color: #8491a5;
+}
+
+.list i,
+.list-admin i {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff708f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 16px;
+  font-style: normal;
+  margin-bottom: 12px;
+  margin-top: 5px;
+  letter-spacing: 0.05em;
+}
+
+.list a {
+  position: absolute;
+  //下から18px,右から30pxに配置する
+  bottom: 18px;
+  right: 30px;
+  display: inline-block;
+  color: #30c8d6;
+  &:hover {
+    color: #21bbc9;
+  }
+}
