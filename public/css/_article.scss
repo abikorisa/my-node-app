@@ -1,0 +1,27 @@
+.article > h1 {
+  font-size: 30px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  margin-bottom: 60px;
+}
+
+.article > p {
+  font-size: 16px;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 2.2;
+}
+
+.article > i {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ff708f;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 4px 20px;
+  font-style: normal;
+  margin-bottom: 24px;
+  margin-top: 0px;
+}

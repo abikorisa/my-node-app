@@ -1,0 +1,16 @@
+//ボタンデザイン
+.main-btn {
+  display: inline-block;
+  border-radius: 20px;
+  font-size: 16pt;
+  text-align: center;
+  cursor: pointer;
+  padding: 13px 30px;
+  background: #24285b;
+  color: #ffffff;
+  line-height: 1em;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.8;
+  }
+}
