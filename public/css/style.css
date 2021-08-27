@@ -6,7 +6,8 @@
 
 html {
   font-size: 100%;
-  font-family: "Hiragino Sans", sans-serif;
+  font-family: heisei-maru-gothic-std, sans-serif;
+  font-style: normal;
   line-height: 1.7;
   letter-spacing: 1px;
 }
@@ -107,6 +108,11 @@ select::-ms-expand {
   opacity: 0.8;
 }
 
+.position-center {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
 header {
   background-color: #ffdddc;
 }
@@ -139,6 +145,10 @@ header {
   color: #ffffff;
   font-weight: bold;
   padding-left: 30px;
+  transition: 0.3s;
+}
+.header-nav li > a:hover {
+  color: #24285b;
 }
 
 .header-item {
@@ -174,34 +184,24 @@ main {
   padding: 80px 0 100px;
 }
 
-.list li,
-.list-admin li {
+.article--item {
   position: relative;
   padding: 28px 40px 54px;
   border: 1px solid #d5dee8;
   border-radius: 6px;
   background-color: #ffffff;
 }
-
-.list li:not(:first-child),
-.list-admin li:not(:first-child) {
-  margin-top: 20px;
-}
-
-.list h2,
-.list-admin h2 {
+.article--item h2 {
   font-size: 22px;
   margin-bottom: 12px;
+  font-weight: 800;
 }
-
-.list p,
-.list-admin p {
+.article--item p {
   font-size: 16px;
   color: #8491a5;
+  font-weight: 400;
 }
-
-.list i,
-.list-admin i {
+.article--item i {
   display: inline-flex;
   align-items: center;
   background-color: #ff708f;
@@ -215,14 +215,19 @@ main {
   letter-spacing: 0.05em;
 }
 
-.list a {
+.article--item:not(:first-child),
+.article--item:not(:first-child) {
+  margin-top: 20px;
+}
+
+.article--list a {
   position: absolute;
   bottom: 18px;
   right: 30px;
   display: inline-block;
   color: #30c8d6;
 }
-.list a:hover {
+.article--list a:hover {
   color: #21bbc9;
 }
 
@@ -258,4 +263,102 @@ main {
   font-style: normal;
   margin-bottom: 24px;
   margin-top: 0px;
+}
+
+/* .sign {
+  border-top: 20px solid #88e7ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+} */
+.sign {
+  align-items: center;
+}
+
+.container {
+  padding: 0 30px;
+}
+
+.sign > .container > p {
+  margin-top: 36px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.sign > .container > p > a {
+  display: inline-block;
+  margin-left: 20px;
+  color: #4ccfc9;
+}
+
+.sign > .container > p > a:hover {
+  color: #2dc2bc;
+}
+
+.sign > .container form {
+  padding-top: 40px;
+}
+
+.sign .panel {
+  padding: 60px 80px;
+  background-color: #ffffff;
+  border: 1px solid #d5dee8;
+  border-radius: 6px;
+}
+
+.sign h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 50px;
+}
+
+.sign h1 > a {
+  color: #8491a5;
+}
+
+.sign h1 > a:hover {
+  color: #2b6d90;
+}
+
+.sign h2 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.sign form > p {
+  margin-bottom: 10px;
+}
+
+.sign input {
+  padding: 10px 20px;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+  /*  background-color: #ffffff; */
+}
+
+.sign input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #fff inset;
+}
+
+.sign input[name=username] {
+  margin-bottom: 30px;
+}
+
+.sign input[name=email] {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+}
+
+.sign input[name=password] {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.sign input[type=submit] {
+  margin-top: 50px;
+  width: 90%;
 }/*# sourceMappingURL=style.css.map */

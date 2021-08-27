@@ -3,21 +3,24 @@
   <head>
     <meta charset="utf-8" />
     <title>BLOG</title>
+    <%- include('adobefont'); %>
     <link rel="stylesheet" href="/css/style.css" />
     <script src="/send_url.js"></script>
   </head>
   <body>
     <%- include('header'); %>
     <main>
-      <div class="article">
+      <div class="article--item">
         <% if (article.category === 'all') { %>
-        <h1><%= article.title %></h1>
+        <h2><%= article.title %></h2>
         <p><%= article.content %></p>
         <% } %>
       </div>
     </main>
     <footer>
-      <a class="btn sub" href="/">一覧にもどる</a>
+      <div class="position-center">
+        <a class="main-btn" href="/">一覧にもどる</a>
+      </div>
     </footer>
   </body>
 </html>
