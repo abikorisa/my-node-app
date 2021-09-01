@@ -13,13 +13,22 @@
       <div class="sign">
         <div class="container">
           <div class="position-center panel">
-            <h2>ログイン</h2>
-            <form action="/login" method="POST">
+            <h2>新規登録</h2>
+            <% if (errors.length > 0) { %>
+            <ul class="errors">
+              <% errors.forEach(error => { %>
+              <li><%= error %></li>
+              <% }); %>
+            </ul>
+            <% } %>
+            <form action="/register" method="POST">
+              <p>お名前</p>
+              <input type="text" name="username" />
               <p>メールアドレス</p>
               <input type="text" name="email" />
               <p>パスワード</p>
               <input type="password" name="password" />
-              <input class="main-btn" type="submit" value="ログイン" />
+              <input class="main-btn" type="submit" value="登録する" />
               <a href="/">一覧にもどる</a>
             </form>
           </div>

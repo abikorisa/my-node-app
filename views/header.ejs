@@ -2,14 +2,23 @@
   <div class="header-nav">
     <ul>
       <li><a href="/">記事一覧</a></li>
-      <li><a href="/">ログアウト</a></li>
+      <% if (locals.isLoggedIn) {%>
+      <li><a href="/logout">ログアウト</a></li>
+      <% } else { %>
+      <li><a href="/register">新規登録</a></li>
+      <li><a href="/login">ログイン</a></li>
+      <% } %>
     </ul>
   </div>
   <div class="header-item">
     <div class="blog-title">
       <p class="main-title">RADIO LOG</p>
       <p>らじろぐ</p>
+      <% if (locals.isLoggedIn) {%>
+      <p>ようこそ、<%= locals.username %>さん</p>
+      <% } else { %>
       <a class="main-btn" href="/login">ログイン</a>
+      <% } %>
     </div>
     <div class="blog-img"></div>
   </div>
